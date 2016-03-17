@@ -17,13 +17,14 @@ void zniszcztab2(){     /*metoda pozwalajaca zniszczyc tablice, na ktora wskazuj
     delete[] w2;
     w2=NULL;
     }
-void wypelnijtab(){     /*metoda pozwalajaca na wypelnienie tablicy liczba 9*/
-    cout << "Podaj ilosc elementow, jaka chcesz wypelnic tablice: ";
-    int ilosc;
-    cin >> ilosc;
+void wypelnijtab1(int ilosc, int j){     /*metoda pozwalajaca na wypelnienie tablicy numerem indeksu +1, w ktorej zastosowalem taktyka powiekszenia o 1*/
     for(int i=0; i<ilosc; i++){
         if(rozmiar>i) {
-        w1[i]=9;
+        w1[i]=i+1;
+        }
+        else {
+        powieksz1(j);
+        w1[i]=i+1;
         }
     }
     }
@@ -33,12 +34,26 @@ void wypisztab(){       /*metoda, ktora wypisuje wszystkie elementy tablicy*/
     }
     cout<<endl;
     }
+void powieksz1(int x){  /*metoda realizujaca powiekszanie tablicy o stala wartosc*/
+    w2=w1;              /*wskaźnik w2 wskazuje teraz na stara tablice, a w1 bedzie nowa tablica*/
+    rozmiar=rozmiar+x;  /*powiekszamy rozmiar*/
+    w1=new int[rozmiar];/*tworzymy tablice o nowym rozmiarze*/
+    for(int i=0; i<(rozmiar-x); i++){
+    w1[i]=w2[i];
+    }
+    zniszcztab2();
+    }
 };
 
 int main(){
+cout << "Tablica nr 1" << endl;
 tabd tab1;
 tab1.zrobtab();
-tab1.wypelnijtab();
+tab1.wypelnijtab1(100, 1);   /*wypelnianie tablicy 100-ma elementami z zastosowaniem powiekszania o 1*/
 tab1.wypisztab();
-tab1.zniszcztab();
+cout << "Tablica nr 2" << endl;
+tabd tab2;
+tab2.zrobtab();
+tab2.wypelnijtab1(100, 500); /*wypelnianie tablicy z zastosowaniem powiekszania o 500*/
+tab2.wypisztab();
 }
