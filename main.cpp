@@ -1,4 +1,6 @@
 #include <iostream>
+#include <ctime>
+#include "stoper.h"
 using namespace std;
 class  tabd{            /*tworzymy klase, w ktorej bedziemy zajmowac sie nasza tablica*/
 int rozmiar;            /*rozmiar tablicy*/
@@ -68,16 +70,23 @@ void wypisztab(){       /*metoda, ktora wypisuje wszystkie elementy tablicy*/
 };
 
 int main(){
+stoper s;
 cout << "Tablica nr 1" << endl;
 tabd tab1;
+s.start();
 tab1.wypelnijtab1(100, 1);   /*wypelnianie tablicy 100-ma elementami z zastosowaniem powiekszania o 1*/
+s.stop();
 tab1.wypisztab();
 cout << "Tablica nr 2" << endl;
 tabd tab2;
+s.start();
 tab2.wypelnijtab1(100, 500); /*wypelnianie tablicy 100-ma elementami z zastosowaniem powiekszania o 500*/
+s.stop();
 tab2.wypisztab();
 cout << "Tablica nr 3" << endl;
 tabd tab3;
+s.start();
 tab3.wypelnijtab2(100);
+s.stop();
 tab3.wypisztab();
 }
