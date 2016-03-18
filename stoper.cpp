@@ -8,5 +8,5 @@ void stoper::start(){
     }
 void stoper::stop(){
     czas=(clock()-t )/(double) CLOCKS_PER_SEC;
-    cout<<"Czas w milisekundach: "<< czas <<'\n';
+    cout<<"Czas: "<< czas <<'\n';
     }
