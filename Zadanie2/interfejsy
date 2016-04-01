@@ -2,8 +2,6 @@ class interfejsstosu{
 public:
 virtual void push(element)=0;
 virtual element pop()=0;   /*throws out of range exception if empty*/
-virtual int size()=0;
-virtual bool isempty()=0; /*true when size=0*/
 };
 
 class interfejslisty{
@@ -54,6 +52,7 @@ w1[stacksize]=element;
 stacksize=stacksize+1;
 }
 element pop(){
+if size=0 return(0);
 return(w1[stacksize]);
 stacksize=stacksize-1;
 }
