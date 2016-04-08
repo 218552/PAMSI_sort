@@ -63,7 +63,6 @@ void tabd::wypisztab(){       /*metoda, ktora wypisuje wszystkie elementy tablic
     }
     cout<<endl;
     }
-void tabd::wykonaj(){}
 void tabd::wykonaj(int ilosc, int j){
 s.start();
 wypelnijtab1(ilosc,j);

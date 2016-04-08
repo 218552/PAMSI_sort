@@ -2,7 +2,7 @@
 1458245603 source:/home/matiw51/Documents/PAMSI/Zadanie 1/tabD.cpp
 	<iostream>
 
-1459501232 source:/home/matiw51/Documents/PAMSI/Zadanie1/main.cpp
+1460084220 source:/home/matiw51/Documents/PAMSI/Zadanie1/main.cpp
 	<iostream>
 	<ctime>
 	"stoper.h"
@@ -17,16 +17,16 @@
 	<iostream>
 	<ctime>
 
-1459501119 /home/matiw51/Documents/PAMSI/Zadanie1/tabd.h
+1460084030 /home/matiw51/Documents/PAMSI/Zadanie1/tabd.h
 	<iostream>
 	"interfejs.h"
 	"stoper.h"
 
-1459501201 source:/home/matiw51/Documents/PAMSI/Zadanie1/tabd.cpp
+1460084170 source:/home/matiw51/Documents/PAMSI/Zadanie1/tabd.cpp
 	"tabd.h"
 	<iostream>
 	<ctime>
 
-1459497598 /home/matiw51/Documents/PAMSI/Zadanie1/interfejs.h
+1460084030 /home/matiw51/Documents/PAMSI/Zadanie1/interfejs.h
 	<iostream>
 

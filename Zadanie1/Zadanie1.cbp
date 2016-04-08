@@ -31,9 +31,12 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="interfejs.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="stoper.cpp" />
 		<Unit filename="stoper.h" />
+		<Unit filename="tabd.cpp" />
+		<Unit filename="tabd.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />

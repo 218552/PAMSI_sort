@@ -17,7 +17,6 @@ public:
 tabd();             /*konstruktor*/
 ~tabd();      /*destruktor*/
 void wypisztab();                       /*metoda, ktora wypisuje wszystkie elementy tablicy*/
-virtual void wykonaj();
 virtual void wykonaj(int ilosc);
 virtual void wykonaj(int ilosc, int j);
 virtual void przygotuj();
