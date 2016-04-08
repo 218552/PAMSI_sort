@@ -1,8 +1,8 @@
-#include "interfejs.h"
 #include "stoper.h"
 #ifndef TABD
 #define TABD
-class  tabd: public interfejs{            /*tworzymy klase, w ktorej bedziemy zajmowac sie nasza tablica*/
+class  tabd{            /*tworzymy klase, w ktorej bedziemy zajmowac sie nasza tablica*/
+friend class stos;
 stoper s;               /*stoper*/
 int rozmiar;            /*rozmiar tablicy*/
 int* w1;                /*wskaznik1*/
@@ -16,8 +16,5 @@ public:
 tabd();             /*konstruktor*/
 ~tabd();      /*destruktor*/
 void wypisztab();                       /*metoda, ktora wypisuje wszystkie elementy tablicy*/
-virtual void wykonaj(int ilosc);
-virtual void wykonaj(int ilosc, int j);
-virtual void przygotuj();
 };
 #endif
