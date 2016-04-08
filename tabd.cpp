@@ -1,6 +1,8 @@
 #include "tabd.h"
 #include <iostream>
+#include <ctime>
 using namespace std;
+
 void tabd::zniszcztab2(){     /*metoda pozwalajaca zniszczyc tablice, na ktora wskazuje wskaznik2*/
     delete[] w2;
     w2=NULL;
@@ -61,3 +63,17 @@ void tabd::wypisztab(){       /*metoda, ktora wypisuje wszystkie elementy tablic
     }
     cout<<endl;
     }
+void tabd::wykonaj(int ilosc, int j){
+s.start();
+wypelnijtab1(ilosc,j);
+s.stop();
+}
+
+void tabd::wykonaj(int ilosc){  /*przeciazamy metode dla dwoch roznych sposobow wykonania*/
+s.start();
+wypelnijtab2(ilosc);
+s.stop();
+}
+
+void tabd::przygotuj(){
+}
