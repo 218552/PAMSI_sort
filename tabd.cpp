@@ -63,17 +63,3 @@ void tabd::wypisztab(){       /*metoda, ktora wypisuje wszystkie elementy tablic
     }
     cout<<endl;
     }
-void tabd::wykonaj(int ilosc, int j){
-s.start();
-wypelnijtab1(ilosc,j);
-s.stop();
-}
-
-void tabd::wykonaj(int ilosc){  /*przeciazamy metode dla dwoch roznych sposobow wykonania*/
-s.start();
-wypelnijtab2(ilosc);
-s.stop();
-}
-
-void tabd::przygotuj(){
-}
